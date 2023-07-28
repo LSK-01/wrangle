@@ -1,0 +1,93 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "areUsersPublic",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "goingPublicAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "goingPublicAt",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalUpvotes",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isPublic",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "endingAt",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isPublic",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "goingPublicAt",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "arguments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isPublic",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "totalUpvotes",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "alreadyMatched",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "userSide",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timeCreated",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
