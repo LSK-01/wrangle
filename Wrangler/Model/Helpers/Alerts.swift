@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftMessages
 
 class Alert {
@@ -19,7 +20,7 @@ class Alert {
 //        }
 //    }
 //
-    static func alert(message: String, title: String){
+    @MainActor static func alert(message: String, title: String){
         SwiftMessages.hideAll()
         
         let view = MessageView.viewFromNib(layout: .cardView)
@@ -45,7 +46,7 @@ class Alert {
         
     }
     
-    static func errorAlert(error: String){
+    @MainActor static func errorAlert(error: String){
         SwiftMessages.hideAll()
         
         let view = MessageView.viewFromNib(layout: .cardView)
@@ -71,7 +72,7 @@ class Alert {
         SwiftMessages.show(view: view)
     }
     
-    static func statusLineAlert(message: String){
+    @MainActor static func statusLineAlert(message: String){
 
         SwiftMessages.hideAll()
         let view = MessageView.viewFromNib(layout: .statusLine)

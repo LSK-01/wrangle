@@ -48,7 +48,7 @@ class PublicArgumentsCV: UIViewController, VoteCVCUpdateDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let lastIndex = lastIndexSelected{
+        if lastIndexSelected != nil{
             collectionView.reloadItems(at: [IndexPath(row: lastIndexSelected, section: 1)])
         }
         
@@ -113,20 +113,20 @@ class PublicArgumentsCV: UIViewController, VoteCVCUpdateDelegate {
                                 
                                 if tempArgs.count == snapshot.documentChanges.count {
 
-                                        self.collectionView?.performBatchUpdates({
+                         
                                             tempArgs = tempArgs.reversed()
                                             self.pubArguments.insert(contentsOf: tempArgs, at: 0)
                        
                                             let indexPaths = Array(0...tempArgs.count-1).map { IndexPath(item: $0, section: 1) }
-                                            self.collectionView.insertItems(at: indexPaths)
-                                        }, completion: nil)
+                                            self.collectionView.reloadData()
+                    
                                     
                                     return
                                 }
                             case .modified:
                                 let argument = PublicArgumentFunctions.createPublicArg(argument: change.document)
                                 
-                                if let winner = argument.winner{
+                                if argument.winner != nil{
                                     let index = self.pubArguments.firstIndex(where: {$0.argumentId == argument.argumentId})
                                     if let index = index{
                                         self.pubArguments.remove(at: index)
@@ -238,17 +238,15 @@ extension PublicArgumentsCV: UICollectionViewDelegate, UICollectionViewDelegateF
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0{
-            return 1
-        }
-        else if section == 1{
-            return pubArguments.count
-        }
-        else if !pubArguments.isEmpty{
+        switch section {
+        case 0:
+            return 1  // Header section
+        case 1:
+            return pubArguments.count  // Arguments section
+        case 2:
+            return pubArguments.isEmpty ? 1 : 0  // Empty state section
+        default:
             return 0
-        }
-        else{
-            return 1
         }
     }
     

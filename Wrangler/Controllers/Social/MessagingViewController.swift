@@ -233,7 +233,6 @@ class MessagingViewController: UIViewController, UITextViewDelegate, ZoomImageDe
                             let status = docChange.document["status"] as! String
                             
                             self.showHasSeen = false
-                            self.collectionView.reloadSections([1])
 
                             if status != "read"{
                                 Database.writeToDocument(path: "arguments/\(self.argumentInfo.argumentId)/messages/\(docChange.document.documentID)", data: ["status" : "read"], merge: true)
@@ -284,7 +283,7 @@ class MessagingViewController: UIViewController, UITextViewDelegate, ZoomImageDe
                         //check the modified message is a) this users message, b) has been read by the opponent and c) is the latest message which has been sent - if all these cases are true we show the hasSeen label
                         if modifiedMessage.status == .read && modifiedMessage.id == self.messages.last?.id && modifiedMessage.sentBy == User.details.uid{
                             self.showHasSeen = true
-                            self.collectionView.reloadSections([1])
+                        
                             
                         }
                         break
@@ -475,16 +474,19 @@ class MessagingViewController: UIViewController, UITextViewDelegate, ZoomImageDe
             ]
             
             messages.append(Messages.createMessageObjectFromDict(data: data))
-            
+            self.showHasSeen = false
+
             DispatchQueue.main.async {
                 /*
                  let indexPath = IndexPath(item: self.messages.count - 1, section: 0) //at some index
                  self.collectionView.insertItems(at: [indexPath])
                  */
-                self.showHasSeen = false
-                self.collectionView.reloadSections([1])
-                let indexPath = IndexPath(item: self.messages.count - 1, section: 0)
-                self.collectionView.insertItems(at: [indexPath])
+                self.collectionView.performBatchUpdates {
+                    self.collectionView.reloadSections([1])
+                    let indexPath = IndexPath(item: self.messages.count - 1, section: 0)
+                    self.collectionView.insertItems(at: [indexPath])
+                }
+
                 self.scrollToBottom()
             }
             
@@ -518,7 +520,6 @@ class MessagingViewController: UIViewController, UITextViewDelegate, ZoomImageDe
                         //the index given is the message from the top - its as if we were going through the normal self.messages array as far as the for loop is concerned but weve reversed it
                         let trueIndex = (self.messages.count - 1) - index
                         self.messages[trueIndex].status = .written
-                        self.collectionView.reloadData()
                         break
                     }
                 }

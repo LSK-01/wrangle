@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 import GoogleSignIn
+import FirebaseAuth
 //import NVActivityIndicatorView
 
 protocol updateUserDetailsDelegate: HomescreenVC{

@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
 //import NVActivityIndicatorView
 
 class SignUpViewController: UIViewController, UIGestureRecognizerDelegate{
@@ -101,12 +102,12 @@ class SignUpViewController: UIViewController, UIGestureRecognizerDelegate{
                 
             }
             if let err = err as NSError?{
-                 let errCode = AuthErrorCode(_nsError: err)
+                let errCode = AuthErrorCode(rawValue: err.code)!
                 
                     switch errCode{
                     case AuthErrorCode.emailAlreadyInUse:
                         self.progressHUD.hide()
-                        Alert.errorAlert(error: "Please connect to internet")
+                        Alert.errorAlert(error: "This email is already in use!")
                         
                     case AuthErrorCode.tooManyRequests:
                         self.progressHUD.hide()

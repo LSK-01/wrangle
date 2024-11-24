@@ -3,13 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F4B5D81073E71A908BD09B7 /* Pods_Wrangle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B61EFAA111170C2D484BEF /* Pods_Wrangle.framework */; };
-		6C7FDADDC512C3C6EE9826EE /* Pods_WranglerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26395349814FE842AC748B98 /* Pods_WranglerUITests.framework */; };
-		7C11538B7BB8C089F4EE8ECC /* Pods_WranglerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FE582A153B84343E0F4320 /* Pods_WranglerTests.framework */; };
 		810BDB952167F7BF00D70408 /* PublicArgumentsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810BDB942167F7BF00D70408 /* PublicArgumentsDetailVC.swift */; };
 		810F42CE2173C23E005B17B3 /* SwiftMessagesSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F42CD2173C23E005B17B3 /* SwiftMessagesSegue.swift */; };
 		8111648A22CE7B320060F3B6 /* AddUserToTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8111648922CE7B320060F3B6 /* AddUserToTopic.swift */; };
@@ -33,7 +30,6 @@
 		817C3E9B210FB00A009B536A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C3E99210FB00A009B536A /* LaunchScreen.storyboard */; };
 		817C3EA6210FB00A009B536A /* WranglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C3EA5210FB00A009B536A /* WranglerTests.swift */; };
 		817C3EB1210FB00A009B536A /* WranglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C3EB0210FB00A009B536A /* WranglerUITests.swift */; };
-		817C3EBF210FB438009B536A /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817C3EBE210FB438009B536A /* IQKeyboardManagerSwift.framework */; };
 		817C3EC5210FB6BB009B536A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C3EC4210FB6BA009B536A /* Main.storyboard */; };
 		817C3EDD210FB79A009B536A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C3EC8210FB79A009B536A /* User.swift */; };
 		817C3EDE210FB79A009B536A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C3ECA210FB79A009B536A /* Extensions.swift */; };
@@ -66,9 +62,16 @@
 		81F09FC62437CC1B00CAC638 /* VoteCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F09FC52437CC1B00CAC638 /* VoteCVC.swift */; };
 		81FA7E892136D4A500B5D48F /* MessageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FA7E882136D4A500B5D48F /* MessageCVC.swift */; };
 		CB86F4B726B39E9A0029E438 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB86F4B626B39E9A0029E438 /* AboutUsVC.swift */; };
-		CBE6789826C47EDB0011CCF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBE6789726C47EDB0011CCF1 /* GoogleService-Info.plist */; };
-		CBE6789926C47EDB0011CCF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBE6789726C47EDB0011CCF1 /* GoogleService-Info.plist */; };
-		CBE6789A26C47EDB0011CCF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBE6789726C47EDB0011CCF1 /* GoogleService-Info.plist */; };
+		CB9463752CF2AE1600818A2F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CB9463742CF2AE1600818A2F /* FirebaseAuth */; };
+		CB9463772CF2AE1600818A2F /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CB9463762CF2AE1600818A2F /* FirebaseCore */; };
+		CB9463792CF2AE1600818A2F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB9463782CF2AE1600818A2F /* FirebaseFirestore */; };
+		CB94637B2CF2AE1600818A2F /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = CB94637A2CF2AE1600818A2F /* FirebaseFunctions */; };
+		CB94637D2CF2AE1600818A2F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CB94637C2CF2AE1600818A2F /* FirebaseStorage */; };
+		CB9463802CF34C9E00818A2F /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = CB94637F2CF34C9E00818A2F /* SwiftMessages */; };
+		CB9463822CF34D1600818A2F /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB9463812CF34D1600818A2F /* GoogleSignInSwift */; };
+		CB9463842CF34D9300818A2F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CB9463832CF34D9300818A2F /* FirebaseMessaging */; };
+		CB9463862CF34DAD00818A2F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB9463852CF34DAD00818A2F /* IQKeyboardManagerSwift */; };
+		CB9463882CF35A4900818A2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9463872CF35A4900818A2F /* GoogleService-Info.plist */; };
 		CBE6789C26C483DA0011CCF1 /* PushNotifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6789B26C483DA0011CCF1 /* PushNotifs.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,10 +93,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B9FE8A953DD440FEE741877 /* Pods-WranglerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WranglerTests.debug.xcconfig"; path = "Target Support Files/Pods-WranglerTests/Pods-WranglerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		26395349814FE842AC748B98 /* Pods_WranglerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WranglerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41A98C11159D9FEC3955761D /* Pods-WranglerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WranglerUITests.release.xcconfig"; path = "Target Support Files/Pods-WranglerUITests/Pods-WranglerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4CA9BB837AA80D501BB420F4 /* Pods-WranglerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WranglerUITests.debug.xcconfig"; path = "Target Support Files/Pods-WranglerUITests/Pods-WranglerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		810BDB942167F7BF00D70408 /* PublicArgumentsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicArgumentsDetailVC.swift; sourceTree = "<group>"; };
 		810F42CD2173C23E005B17B3 /* SwiftMessagesSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesSegue.swift; sourceTree = "<group>"; };
 		8111648922CE7B320060F3B6 /* AddUserToTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserToTopic.swift; sourceTree = "<group>"; };
@@ -156,17 +155,10 @@
 		81D9F1532127038B0010CD87 /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
 		81F09FC52437CC1B00CAC638 /* VoteCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteCVC.swift; sourceTree = "<group>"; };
 		81FA7E882136D4A500B5D48F /* MessageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCVC.swift; sourceTree = "<group>"; };
-		8CD2D2D787C044DF1C70BA62 /* Pods-Wrangler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrangler.debug.xcconfig"; path = "Target Support Files/Pods-Wrangler/Pods-Wrangler.debug.xcconfig"; sourceTree = "<group>"; };
-		A7FE582A153B84343E0F4320 /* Pods_WranglerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WranglerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA8DDA17AB1D4247BEA8453A /* Pods-WranglerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WranglerTests.release.xcconfig"; path = "Target Support Files/Pods-WranglerTests/Pods-WranglerTests.release.xcconfig"; sourceTree = "<group>"; };
-		AE1E6A1ACECBE6A59ED3C6CA /* Pods-Wrangle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrangle.release.xcconfig"; path = "Target Support Files/Pods-Wrangle/Pods-Wrangle.release.xcconfig"; sourceTree = "<group>"; };
-		B4EBA84CC18A05ADF09F9489 /* Pods-Wrangle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrangle.debug.xcconfig"; path = "Target Support Files/Pods-Wrangle/Pods-Wrangle.debug.xcconfig"; sourceTree = "<group>"; };
 		CB86F4B626B39E9A0029E438 /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		CB9463872CF35A4900818A2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBE6789626C469D10011CCF1 /* Wrangle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wrangle.entitlements; sourceTree = "<group>"; };
-		CBE6789726C47EDB0011CCF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CBE6789B26C483DA0011CCF1 /* PushNotifs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifs.swift; sourceTree = "<group>"; };
-		CE9D0ABA52E6BE5E6576422E /* Pods-Wrangler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrangler.release.xcconfig"; path = "Target Support Files/Pods-Wrangler/Pods-Wrangler.release.xcconfig"; sourceTree = "<group>"; };
-		F3B61EFAA111170C2D484BEF /* Pods_Wrangle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wrangle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +166,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817C3EBF210FB438009B536A /* IQKeyboardManagerSwift.framework in Frameworks */,
-				0F4B5D81073E71A908BD09B7 /* Pods_Wrangle.framework in Frameworks */,
+				CB9463842CF34D9300818A2F /* FirebaseMessaging in Frameworks */,
+				CB9463802CF34C9E00818A2F /* SwiftMessages in Frameworks */,
+				CB9463792CF2AE1600818A2F /* FirebaseFirestore in Frameworks */,
+				CB9463822CF34D1600818A2F /* GoogleSignInSwift in Frameworks */,
+				CB9463862CF34DAD00818A2F /* IQKeyboardManagerSwift in Frameworks */,
+				CB94637B2CF2AE1600818A2F /* FirebaseFunctions in Frameworks */,
+				CB9463772CF2AE1600818A2F /* FirebaseCore in Frameworks */,
+				CB9463752CF2AE1600818A2F /* FirebaseAuth in Frameworks */,
+				CB94637D2CF2AE1600818A2F /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +182,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C11538B7BB8C089F4EE8ECC /* Pods_WranglerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,28 +189,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7FDADDC512C3C6EE9826EE /* Pods_WranglerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E5822061631FDA12126E7B1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8CD2D2D787C044DF1C70BA62 /* Pods-Wrangler.debug.xcconfig */,
-				CE9D0ABA52E6BE5E6576422E /* Pods-Wrangler.release.xcconfig */,
-				0B9FE8A953DD440FEE741877 /* Pods-WranglerTests.debug.xcconfig */,
-				AA8DDA17AB1D4247BEA8453A /* Pods-WranglerTests.release.xcconfig */,
-				4CA9BB837AA80D501BB420F4 /* Pods-WranglerUITests.debug.xcconfig */,
-				41A98C11159D9FEC3955761D /* Pods-WranglerUITests.release.xcconfig */,
-				B4EBA84CC18A05ADF09F9489 /* Pods-Wrangle.debug.xcconfig */,
-				AE1E6A1ACECBE6A59ED3C6CA /* Pods-Wrangle.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		811B8F902180F31700224CA2 /* Global Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +220,6 @@
 				817C3EAF210FB00A009B536A /* WranglerUITests */,
 				817C3E8C210FB009009B536A /* Products */,
 				AB302194DC8E197457AA18CF /* Frameworks */,
-				7E5822061631FDA12126E7B1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,11 +236,11 @@
 		817C3E8D210FB009009B536A /* Wrangler */ = {
 			isa = PBXGroup;
 			children = (
+				CB9463872CF35A4900818A2F /* GoogleService-Info.plist */,
 				817C3E99210FB00A009B536A /* LaunchScreen.storyboard */,
 				817C3EC4210FB6BA009B536A /* Main.storyboard */,
 				81AC1CFC212877770074B5E4 /* SFCompactDisplay-Regular.otf */,
 				817C3E8E210FB009009B536A /* AppDelegate.swift */,
-				CBE6789726C47EDB0011CCF1 /* GoogleService-Info.plist */,
 				817C3EC6210FB79A009B536A /* Model */,
 				817C3EEC210FB7B2009B536A /* Controllers */,
 				817C3E97210FB00A009B536A /* Assets.xcassets */,
@@ -450,9 +431,6 @@
 			children = (
 				8135B301212AE847002F8F35 /* SwiftMessages.framework */,
 				817C3EBE210FB438009B536A /* IQKeyboardManagerSwift.framework */,
-				A7FE582A153B84343E0F4320 /* Pods_WranglerTests.framework */,
-				26395349814FE842AC748B98 /* Pods_WranglerUITests.framework */,
-				F3B61EFAA111170C2D484BEF /* Pods_Wrangle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -464,11 +442,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 817C3EB5210FB00A009B536A /* Build configuration list for PBXNativeTarget "Wrangle" */;
 			buildPhases = (
-				1923E7E8D9B796E97186A4A7 /* [CP] Check Pods Manifest.lock */,
 				817C3E87210FB009009B536A /* Sources */,
 				817C3E88210FB009009B536A /* Frameworks */,
 				817C3E89210FB009009B536A /* Resources */,
-				00441F51944A92F2CFC79A38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -483,7 +459,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 817C3EB8210FB00A009B536A /* Build configuration list for PBXNativeTarget "WranglerTests" */;
 			buildPhases = (
-				F1D72E5C55F7DFFBE26647E1 /* [CP] Check Pods Manifest.lock */,
 				817C3E9D210FB00A009B536A /* Sources */,
 				817C3E9E210FB00A009B536A /* Frameworks */,
 				817C3E9F210FB00A009B536A /* Resources */,
@@ -502,7 +477,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 817C3EBB210FB00A009B536A /* Build configuration list for PBXNativeTarget "WranglerUITests" */;
 			buildPhases = (
-				88D57DBE2DA989BF8552DBCE /* [CP] Check Pods Manifest.lock */,
 				817C3EA8210FB00A009B536A /* Sources */,
 				817C3EA9210FB00A009B536A /* Frameworks */,
 				817C3EAA210FB00A009B536A /* Resources */,
@@ -523,8 +497,9 @@
 		817C3E83210FB009009B536A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1610;
 				ORGANIZATIONNAME = "Luca Sarif-Kattan";
 				TargetAttributes = {
 					817C3E8A210FB009009B536A = {
@@ -552,6 +527,12 @@
 				Base,
 			);
 			mainGroup = 817C3E82210FB009009B536A;
+			packageReferences = (
+				CBF99FF92CF2A5D2006F2B79 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				CBF99FFA2CF2A655006F2B79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CB94637E2CF2AE6100818A2F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 817C3E8C210FB009009B536A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -570,7 +551,7 @@
 			files = (
 				817C3E9B210FB00A009B536A /* LaunchScreen.storyboard in Resources */,
 				81AC1CFE2128777B0074B5E4 /* SFCompactDisplay-Regular.otf in Resources */,
-				CBE6789826C47EDB0011CCF1 /* GoogleService-Info.plist in Resources */,
+				CB9463882CF35A4900818A2F /* GoogleService-Info.plist in Resources */,
 				817C3E98210FB00A009B536A /* Assets.xcassets in Resources */,
 				817C3EC5210FB6BB009B536A /* Main.storyboard in Resources */,
 			);
@@ -580,7 +561,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE6789926C47EDB0011CCF1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,97 +568,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE6789A26C47EDB0011CCF1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		00441F51944A92F2CFC79A38 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wrangle/Pods-Wrangle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wrangle/Pods-Wrangle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wrangle/Pods-Wrangle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1923E7E8D9B796E97186A4A7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wrangle-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88D57DBE2DA989BF8552DBCE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WranglerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1D72E5C55F7DFFBE26647E1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WranglerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		817C3E87210FB009009B536A /* Sources */ = {
@@ -784,7 +677,6 @@
 		817C3EB3210FB00A009B536A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -809,6 +701,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -820,7 +713,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -848,7 +741,6 @@
 		817C3EB4210FB00A009B536A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -873,6 +765,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -884,6 +777,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -905,7 +799,6 @@
 		};
 		817C3EB6210FB00A009B536A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4EBA84CC18A05ADF09F9489 /* Pods-Wrangle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Wrangle.entitlements;
@@ -929,7 +822,6 @@
 		};
 		817C3EB7210FB00A009B536A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE1E6A1ACECBE6A59ED3C6CA /* Pods-Wrangle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Wrangle.entitlements;
@@ -953,9 +845,7 @@
 		};
 		817C3EB9210FB00A009B536A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B9FE8A953DD440FEE741877 /* Pods-WranglerTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WranglerTests/Info.plist;
@@ -974,9 +864,7 @@
 		};
 		817C3EBA210FB00A009B536A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA8DDA17AB1D4247BEA8453A /* Pods-WranglerTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WranglerTests/Info.plist;
@@ -995,9 +883,7 @@
 		};
 		817C3EBC210FB00A009B536A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CA9BB837AA80D501BB420F4 /* Pods-WranglerUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WranglerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1015,9 +901,7 @@
 		};
 		817C3EBD210FB00A009B536A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41A98C11159D9FEC3955761D /* Pods-WranglerUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WranglerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1073,6 +957,89 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+		CB94637E2CF2AE6100818A2F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		CBF99FF92CF2A5D2006F2B79 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.1;
+			};
+		};
+		CBF99FFA2CF2A655006F2B79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB9463742CF2AE1600818A2F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CB9463762CF2AE1600818A2F /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		CB9463782CF2AE1600818A2F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CB94637A2CF2AE1600818A2F /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		CB94637C2CF2AE1600818A2F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		CB94637F2CF34C9E00818A2F /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBF99FF92CF2A5D2006F2B79 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		CB9463812CF34D1600818A2F /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB94637E2CF2AE6100818A2F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		CB9463832CF34D9300818A2F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9463732CF2AE1600818A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		CB9463852CF34DAD00818A2F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBF99FFA2CF2A655006F2B79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 817C3E83210FB009009B536A /* Project object */;
 }

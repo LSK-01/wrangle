@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import Firebase
 import IQKeyboardManagerSwift
 import GoogleSignIn
@@ -45,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Perform any operations when the user disconnects from app here.
         // ...
         if error != nil{
-            print(error)
+            print(error!)
             return
         }
     }
@@ -73,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           }
         }
 
-        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.isEnabled = true
         IQKeyboardManager.shared.disabledDistanceHandlingClasses.append(MessagingViewController.self)
         
         if let user = Auth.auth().currentUser{

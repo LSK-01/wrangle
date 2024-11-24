@@ -31,9 +31,8 @@ class TopicsCV: UIViewController, AddUserToTopicDelegate, TitleCVCSearchbarDeleg
             searchQueries.append(Database.db.collection("topics").whereField("keywords", arrayContains: keyword).limit(to: limitingDocumentsTo))
         }
         topics = []
-        //  collectionView.reloadSections([1])
         getSearchedTopics()
-        
+        self.collectionView.reloadSections([1])
     }
     
     func getSearchedTopics(){
@@ -46,8 +45,6 @@ class TopicsCV: UIViewController, AddUserToTopicDelegate, TitleCVCSearchbarDeleg
             
             
             if self.topics.count == self.limitingDocumentsTo || self.queryIndex >= self.searchQueries.count - 1{
-                self.collectionView.numberOfItems(inSection: 1)
-                self.collectionView.reloadSections([1, 2])
                 return
             }
             
@@ -347,8 +344,6 @@ class TopicsCV: UIViewController, AddUserToTopicDelegate, TitleCVCSearchbarDeleg
                 
                 topics[index].isMatched = true
                 
-                
-                
                 collectionView.reloadItems(at: [IndexPath(row: index, section: 1)])
             }
             
@@ -457,7 +452,7 @@ extension TopicsCV: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         else if indexPath.section == 1{
             //            var height = CellConstants.cellHeightLarge
             
-            var height = CellConstants.cellHeightLarge
+            let height = CellConstants.cellHeightLarge
             
             
             return CGSize(width: collectionView.frame.width * CellConstants.cellToViewProportionWidth, height: height)
@@ -484,9 +479,9 @@ extension TopicsCV: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
                 returnSpecificTopics(query: searchQueries[queryIndex]) { (newTopics) in
                     
                     self.collectionView?.performBatchUpdates({
-                        var startOfNewElements = self.topics.count
+                        let startOfNewElements = self.topics.count
                         self.topics.append(contentsOf: newTopics)
-                        var endOfNewElements = self.topics.count - 1
+                        let endOfNewElements = self.topics.count - 1
                         
                         let indexPaths = Array(startOfNewElements...endOfNewElements).map { IndexPath(item: $0, section: 1) }
                         collectionView.insertItems(at: indexPaths)

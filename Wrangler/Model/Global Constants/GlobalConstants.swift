@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import GoogleSignIn
+import GoogleSignInSwift
 
 struct CellConstants{
     static let fontType: UIFont = UIFont.systemFont(ofSize: 21, weight: .medium)

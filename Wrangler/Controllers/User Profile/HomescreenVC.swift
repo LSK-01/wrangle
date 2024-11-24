@@ -155,13 +155,13 @@ class HomescreenVC: UIViewController, UITextViewDelegate, updateUserDetailsDeleg
                             
                             if tempArgs.count == snapshot.documentChanges.count {
                                 
-                                self.argumentsCV?.performBatchUpdates({
+                       
                                     tempArgs = tempArgs.reversed()
                                     self.arguments.insert(contentsOf: tempArgs, at: 0)
                                     
                                     let indexPaths = Array(0...tempArgs.count-1).map { IndexPath(item: $0, section: 0) }
-                                    self.argumentsCV.insertItems(at: indexPaths)
-                                }, completion: nil)
+                                    self.argumentsCV.reloadData()
+                     
                                 self.firstTimeRunning = false
                                 
                                 
@@ -307,10 +307,7 @@ extension HomescreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             return arguments.count
         }
         else if !arguments.isEmpty{
-            
             return 0
-            
-            
         }
         else {
             return 1

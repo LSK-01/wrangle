@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import FirebaseAuth
 
 class ResetPasswordViewController: UIViewController{
     

@@ -83,8 +83,7 @@ class MessageCVC: UICollectionViewCell {
             //add gesture recognizer
             let imageTapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer()
             imageTapRecognizer.addTarget(self, action: #selector(imageTapped(sender:)))
-            imageView.gestureRecognizers = []
-            imageView.gestureRecognizers!.append(imageTapRecognizer)
+            imageView.gestureRecognizers = [imageTapRecognizer]
             
             //make sure textLabel is send to back
             sendSubviewToBack(textLabel)
